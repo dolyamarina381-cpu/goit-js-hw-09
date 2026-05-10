@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 const rootDir = resolve(__dirname, '..');
 
 export default defineConfig({
+	base: '/goit-js-hw-09/',
 	root: rootDir,
 	resolve: {
 		alias: {
