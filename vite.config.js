@@ -1,19 +1,15 @@
-import { resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
-const rootDir = fileURLToPath(new URL('.', import.meta.url));
+const root = resolve(__dirname);
 
 export default defineConfig({
-  base: '/goit-js-hw-09/',
-  root: rootDir,
   build: {
-    outDir: 'dist',
     rollupOptions: {
       input: {
-        main: resolve(rootDir, 'index.html'),
-        gallery: resolve(rootDir, 'src/1-gallery.html'),
-        form: resolve(rootDir, 'src/2-form.html'),
+        main: resolve(root, 'index.html'),
+        gallery: resolve(root, '1-gallery.html'),
+        form: resolve(root, '2-form.html'),
       },
     },
   },
