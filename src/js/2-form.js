@@ -43,7 +43,7 @@ const onWindowDOMContentLoaded = (event) => {
     console.log(formData)
 };
 
-document.addEventListener('DOMContentLoaded', onWinwodDOMContentLoaded);
+document.addEventListener('DOMContentLoaded', onWindowDOMContentLoaded);
 
 
 
